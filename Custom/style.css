@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+.wrap {
+  display: flex;
+  width: 100%;
+}
+
+.bg-img,
+.bg-img2 {
+  flex: 1;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-img {
+  background-image: url('images/img02.png');
+  animation: change-image 0.2s infinite;
+}
+
+@keyframes change-image {
+  0%, 100% { background-image: url('images/img02.png'); }
+  50% { background-image: url('images/img03.png'); }
+}
+
+.bg-img2 {
+  background-image: url('images/mike02.png');
+  animation: change-image2 0.2s infinite;
+}
+
+@keyframes change-image2 {
+  0%, 100% { background-image: url('images/mike02.png'); }
+  50% { background-image: url('images/mike03.png'); }
+}

@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* 4枚の画像に変化する背景 */
+.bg-img {
+  background-image: url('https://images.unsplash.com/photo-1522383225653-ed111181a951?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzYyMzM5MDd8&ixlib=rb-4.0.3&q=85');
+  background-size: cover;
+  animation: change-image 15s infinite;
+  height: 80vh;
+}
+@keyframes change-image {
+  0%, 100% { background-image: url('https://images.unsplash.com/photo-1522383225653-ed111181a951?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzYyMzM5MDd8&ixlib=rb-4.0.3&q=85'); }
+  25% { background-image: url('https://images.unsplash.com/photo-1563897189520-001001c39f3d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzYyMzM0NDd8&ixlib=rb-4.0.3&q=85'); }
+  50% { background-image: url('https://images.unsplash.com/photo-1471093507554-1b18de49c890?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzYyMzM0NDd8&ixlib=rb-4.0.3&q=85'); }
+  75% { background-image: url('https://images.unsplash.com/photo-1522623349500-de37a56ea2a5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzYyMzQ1NTJ8&ixlib=rb-4.0.3&q=85'); }
+}
+
+/* 時刻に応じた背景切り替え */
+.bg-time {
+  background-size: cover;
+  height: 80vh;
+}
+.morning {
+  background-image: url('https://images.unsplash.com/photo-1465488867967-ffb57e7f0a89?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzYyMzU1OTV8&ixlib=rb-4.0.3&q=85');
+}
+.daytime {
+  background-image: url('https://images.unsplash.com/photo-1514454529242-9e4677563e7b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzYyMzU4MjB8&ixlib=rb-4.0.3&q=85');
+}
+.night {
+  background-image: url('https://images.unsplash.com/photo-1496170804262-975019a5cd34?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzYyMzYwOTB8&ixlib=rb-4.0.3&q=85');
+}
+
+/* 基本スタイル */
+h2 {
+  background-color: #000;
+  display: inline-block;
+  padding: 1rem;
+  color: #fff;
+}

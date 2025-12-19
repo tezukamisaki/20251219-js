@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/* 5色に変化する背景色 */
+.bg-color {
+  background-color: #e74c3c;
+  animation: change-color 10s infinite;
+  height: 80vh;
+}
+@keyframes change-color {
+  0%, 100% { background-color: #e74c3c; }
+  20% { background-color: #f1c40f; }
+  40% { background-color: #1abc9c; }
+  60% { background-color: #3498db; }
+  80% { background-color: #9b59b6; }
+}
+
+/* ランダムに変化する背景色 */
+.bg-random {
+  background-color: #e74c3c;
+  height: 80vh;
+  transition: background-color 3s; /* 色がふんわり変わる演出 */
+}
+
+/* 基本スタイル */
+h2 {
+  background-color: #000;
+  display: inline-block;
+  padding: 1rem;
+  color: #fff;
+}

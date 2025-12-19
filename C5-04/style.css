@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* 再生し続ける背景動画 */
+.video-container {
+  position: relative;
+}
+.video-heading {
+  position: absolute;
+  z-index: 1;
+  background-color: #000;
+  display: inline-block;
+  padding: 1rem;
+  color: #fff;
+}
+.video-bg {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+/* ホバーで動画を再生 */
+.hover-container {
+  position: relative;
+}
+.hover-img,
+.hover-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px; 
+  height: auto;
+  display: block;
+}
+/* 初期表示は画像だけ見せる（動画は非表示） */
+.hover-video {
+  display: none;
+}
